@@ -1,0 +1,159 @@
+/* Estilos para el contenedor del curso */
+.contenedorDeCruso {
+  width: 98%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Estilos para los títulos de los cursos */
+.TituloCruso {
+  text-align: center;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(247, 0, 0, 0.882);
+}
+
+/* Estilos para cada curso */
+.Cruso {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilos para cada subcurso */
+.subCruso {
+  border: 1px solid #fd8feb;
+  background-color: #dfffea;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Estilos para los títulos de los subcursos */
+.TituloPricipalDeCruso {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  color: #070136;
+  margin-bottom: 10px;
+}
+
+.TituloSecunarioDeCruso {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: normal;
+  color: #070136;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos de los subcursos */
+.parrafoDeCruso {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+  .TituloCruso {
+    font-size: 1.8rem;
+  }
+
+  .subCruso {
+    width: 90%;
+  }
+
+  .TituloPricipalDeCruso {
+    font-size: 1.5rem;
+  }
+
+  .TituloSecunarioDeCruso {
+    font-size: 1.2rem;
+  }
+
+  .parrafoDeCruso {
+    font-size: 1rem;
+  }
+}
+
+/* Pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+  .TituloCruso {
+    font-size: 2rem;
+  }
+
+  .subCruso {
+    width: 45%;
+  }
+
+  .TituloPricipalDeCruso {
+    font-size: 1.7rem;
+  }
+
+  .TituloSecunarioDeCruso {
+    font-size: 1.3rem;
+  }
+
+  .parrafoDeCruso {
+    font-size: 1.1rem;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) and (max-width: 992px) {
+  .TituloCruso {
+    font-size: 2.3rem;
+  }
+
+  .subCruso {
+    width: 30%;
+  }
+
+  .TituloPricipalDeCruso {
+    font-size: 1.8rem;
+  }
+
+  .TituloSecunarioDeCruso {
+    font-size: 1.4rem;
+  }
+
+  .parrafoDeCruso {
+    font-size: 1.2rem;
+  }
+}
+
+/* Pantallas extra grandes */
+@media (min-width: 993px) {
+  .TituloCruso {
+    font-size: 2.5rem;
+  }
+
+  .subCruso {
+    width: 30%;
+  }
+
+  .TituloPricipalDeCruso {
+    font-size: 2rem;
+  }
+
+  .TituloSecunarioDeCruso {
+    font-size: 1.5rem;
+  }
+
+  .parrafoDeCruso {
+    font-size: 1.2rem;
+  }
+}

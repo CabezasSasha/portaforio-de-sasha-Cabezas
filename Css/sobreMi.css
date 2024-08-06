@@ -1,0 +1,140 @@
+/* Estilos para el contenedor de la sección "Sobre mí" */
+.contenedorSobreMi {
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Estilos para el contenedor del texto "Quien soy" */
+.contenedorQuienSoy {
+  margin-right: 20px;
+  flex: 0 1 20%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilos para el título "Quien soy" */
+.QuienSoy {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(247, 0, 0, 0.882);
+}
+
+/* Estilos para la imagen del Quien soy */
+.ImgDeQuienSoy {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Estilos para el contenedor del texto "Sobre mi" */
+.subContenedorSobreMi {
+  flex: 0 1 68%;
+  padding: 20px;
+  background-color: #feebfc;
+  border: 2px solid #e30cff;
+  border-radius: 10px;
+}
+
+/* Estilos para el título "Sobre mi" */
+.tituloSobreMi {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Estilos para los párrafos del texto "Sobre mi" */
+.parrafoSobreMi {
+  margin-bottom: 10px;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+/* Estilos para los subpárrafos del texto "Sobre mi" */
+.subParrafoSobreMi {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+  .contenedorSobreMi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedorQuienSoy, .subContenedorSobreMi {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .ImgDeQuienSoy {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contenedorSobreMi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedorQuienSoy, .subContenedorSobreMi {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .ImgDeQuienSoy {
+    width: 40%;
+    height: auto;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) and (max-width: 992px) {
+  .contenedorQuienSoy {
+    flex: 0 1 30%;
+  }
+
+  .subContenedorSobreMi {
+    flex: 0 1 65%;
+  }
+
+  .ImgDeQuienSoy {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Pantallas extra grandes */
+@media (min-width: 993px) {
+  .contenedorQuienSoy {
+    flex: 0 1 20%;
+  }
+
+  .subContenedorSobreMi {
+    flex: 0 1 70%;
+  }
+
+  .ImgDeQuienSoy {
+    width: 300px;
+    height: 300px;
+  }
+}

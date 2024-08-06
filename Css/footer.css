@@ -1,0 +1,96 @@
+footer {
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.parrafoDeFooter {
+    margin: 5px 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ff00bb;
+    border-radius: 4px;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: #000000;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .redesSocial {
+    text-decoration: none;
+    color: #000000;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ff00b3;
+    border-radius: 4px;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: #000000;
+    transition: color 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.fab{
+    margin-right: 3.5%;
+}
+
+.social-media .redesSocial:hover {
+    color: #e60092;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+    .parrafoDeFooter {
+        font-size: 0.9rem;
+    }
+
+    .social-media .redesSocial {
+        font-size: 0.9rem;
+    }
+
+    .redesSocial {
+        flex-basis: 90%; 
+      }
+}
+
+/* Pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+    .parrafoDeFooter {
+        font-size: 1rem;
+    }
+
+    .social-media .redesSocial {
+        font-size: 1rem;
+    }
+
+    .redesSocial {
+        flex-basis: 45%; 
+      }
+}
+
+/* Pantallas grandes y extra grandes */
+@media (min-width: 769px) {
+    .parrafoDeFooter {
+        font-size: 1.1rem;
+    }
+
+    .social-media .redesSocial {
+        font-size: 1.1rem;
+    }
+}

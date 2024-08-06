@@ -1,0 +1,238 @@
+/* Estilos para el contenedor principal */
+.ContenedorDeCarrera {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos para el contenedor de la carrera */
+.carrera {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilos para el contenedor del título */
+.ContenedorDeTitulo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el título de la carrera */
+.TituloDeCarrera {
+  text-align: center;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(247, 0, 0, 0.882);
+}
+
+/* Estilos para las imágenes de las carreras */
+.LogoDeCarrera {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imagen-rotativa {
+  transition: transform 1.0s;
+}
+
+.imagen-rotativa:hover {
+  transform: rotateY(180deg);
+}
+
+.imagen-container {
+  position: relative;
+}
+
+.infoCarrera {
+  display: none;
+}
+
+.subCarrera:hover .infoCarrera {
+  display: block;
+}
+
+/* Estilos para el contenedor de cada carrera */
+.subCarrera {
+  border: 1px solid #b903fa;
+  background-color: #ffdffd;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 2%;
+  margin: 2%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.subCarrera:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para el título primario de la carrera */
+.tituloPrimarioDeCarrera {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  color: #070136;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el título secundario y párrafos */
+.tituloSecundarioDeCarrera {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: normal;
+  color: #070136;
+  margin-bottom: 10px;
+}
+
+.ParrafoDeCarrera {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón */
+.BotonDeCarrera {
+  background-color: navy;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.BotonDeCarrera:hover {
+  background-color: #00001f;
+}
+
+/* Estilos para la clase 'oculto' */
+.oculto {
+  display: none;
+}
+
+/* Estilos para la clase 'rotar' */
+.rotar {
+  transform: rotateY(180deg);
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+  .TituloDeCarrera {
+    font-size: 1.8rem;
+  }
+
+  .subCarrera {
+    width: 90%;
+  }
+
+  .tituloPrimarioDeCarrera {
+    font-size: 1.5rem;
+  }
+
+  .tituloSecundarioDeCarrera {
+    font-size: 1.2rem;
+  }
+
+  .ParrafoDeCarrera {
+    font-size: 1rem;
+  }
+}
+
+/* Pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+  .TituloDeCarrera {
+    font-size: 2rem;
+  }
+
+  .subCarrera {
+    width: 45%;
+  }
+
+  .tituloPrimarioDeCarrera {
+    font-size: 1.7rem;
+  }
+
+  .tituloSecundarioDeCarrera {
+    font-size: 1.3rem;
+  }
+
+  .ParrafoDeCarrera {
+    font-size: 1.1rem;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) and (max-width: 992px) {
+  .TituloDeCarrera {
+    font-size: 2.3rem;
+  }
+
+  .subCarrera {
+    width: 30%;
+  }
+
+  .tituloPrimarioDeCarrera {
+    font-size: 1.8rem;
+  }
+
+  .tituloSecundarioDeCarrera {
+    font-size: 1.4rem;
+  }
+
+  .ParrafoDeCarrera {
+    font-size: 1.2rem;
+  }
+}
+
+/* Pantallas extra grandes */
+@media (min-width: 993px) {
+  .TituloDeCarrera {
+    font-size: 2.5rem;
+  }
+
+  .subCarrera {
+    width: 25%;
+  }
+
+  .tituloPrimarioDeCarrera {
+    font-size: 2rem;
+  }
+
+  .tituloSecundarioDeCarrera {
+    font-size: 1.5rem;
+  }
+
+  .ParrafoDeCarrera {
+    font-size: 1.2rem;
+  }
+}

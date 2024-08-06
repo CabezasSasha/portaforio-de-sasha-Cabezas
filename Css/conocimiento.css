@@ -1,0 +1,170 @@
+/* Contenedor principal */
+.contenedorGeneraDeConocimiento {
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* Título principal */
+.tituloConocimiento {
+  text-align: center;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 5px rgba(247, 0, 0, 0.882);
+}
+
+/* Párrafo introductorio */
+.parrafoConocimiento {
+  text-align: center;
+  font-family: "Bitter", serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-top: 1.2%;
+}
+
+/* Contenedor de los conocimientos */
+.contenerDeConocimiento {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Cada contenedor de conocimiento */
+.contenedorConocimiento {
+  width: calc(30% - 20px);
+  background-color: #ea95f210;
+  border: 1px solid #640299;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de cada categoría de conocimiento */
+.Conocimiento {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ff035b;
+  margin-bottom: 10px;
+}
+
+/* Detalles de cada categoría de conocimiento */
+.subConocimiento {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Enlace de GitHub */
+.subConocimiento a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.subConocimiento a:hover {
+  color: #1E8449;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+  .tituloConocimiento {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+
+  .parrafoConocimiento {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .contenedorConocimiento {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Conocimiento {
+    font-size: 1.5rem;
+  }
+
+  .subConocimiento {
+    font-size: 0.9rem;
+  }
+}
+
+/* Pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+  .tituloConocimiento {
+    font-size: 2rem;
+  }
+
+  .parrafoConocimiento {
+    font-size: 1.1rem;
+  }
+
+  .contenedorConocimiento {
+    width: 45%;
+  }
+
+  .Conocimiento {
+    font-size: 1.7rem;
+  }
+
+  .subConocimiento {
+    font-size: 1rem;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) and (max-width: 992px) {
+  .tituloConocimiento {
+    font-size: 2.3rem;
+  }
+
+  .parrafoConocimiento {
+    font-size: 1.2rem;
+  }
+
+  .contenedorConocimiento {
+    width: calc(45% - 20px);
+  }
+
+  .Conocimiento {
+    font-size: 1.8rem;
+  }
+
+  .subConocimiento {
+    font-size: 1.1rem;
+  }
+}
+
+/* Pantallas extra grandes */
+@media (min-width: 993px) {
+  .tituloConocimiento {
+    font-size: 2.5rem;
+  }
+
+  .parrafoConocimiento {
+    font-size: 1.2rem;
+  }
+
+  .contenedorConocimiento {
+    width: calc(30% - 20px);
+  }
+
+  .Conocimiento {
+    font-size: 2rem;
+  }
+
+  .subConocimiento {
+    font-size: 1rem;
+  }
+}

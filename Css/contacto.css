@@ -1,0 +1,152 @@
+.contenedorDeContacto {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px;
+    background: url('../img/Programagor.jpg') no-repeat center center;
+    background-color: #00000024;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.TituloDeContacto {
+    text-align: center;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(247, 0, 0, 0.882);
+}
+
+.contenedorDeFormulario {
+    display: flex;
+    justify-content: center;
+    background-color: #220248a1;
+}
+
+.grupoDeFormulario {
+    width: 100%;
+    max-width: 600px;    
+}
+
+.claseFormulario {
+    display: block;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-style: normal;
+    color: #000000;
+    background-color: #e7bbfe;
+}
+
+.input-padron, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: #000000;
+}
+
+.enviar {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #ff00dd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.enviar:hover {
+    background-color: #a602ff;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+    .TituloDeContacto {
+        font-size: 1.8rem;
+        text-shadow: 1px 1px 3px rgba(247, 0, 0, 0.882);
+    }
+
+    .input-padron,
+    textarea {
+        font-size: 1rem;
+    }
+
+    .enviar {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+    .TituloDeContacto {
+        font-size: 2rem;
+        text-shadow: 1.5px 1.5px 4px rgba(247, 0, 0, 0.882);
+    }
+
+    .input-padron,
+    textarea {
+        font-size: 1.1rem;
+    }
+
+    .enviar {
+        font-size: 1.1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) and (max-width: 992px) {
+    .TituloDeContacto {
+        font-size: 2.3rem;
+        text-shadow: 2px 2px 4px rgba(247, 0, 0, 0.882);
+    }
+
+    .input-padron,
+    textarea {
+        font-size: 1.3rem;
+    }
+
+    .enviar {
+        font-size: 1.3rem;
+    }
+}
+
+/* Pantallas extra grandes */
+@media (min-width: 993px) {
+    .TituloDeContacto {
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 5px rgba(247, 0, 0, 0.882);
+    }
+
+    .input-padron,
+    textarea {
+        font-size: 1.5rem;
+    }
+
+    .enviar {
+        font-size: 1.5rem;
+    }
+}
